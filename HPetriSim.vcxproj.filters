@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Quelldateien">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Headerdateien">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\cpp\3rd-party\OXZoomView\OXZOOMVW.inl">
+      <Filter>Headerdateien</Filter>
+    </None>
+    <None Include="src\cpp\hpetrisim\res\connector.cur">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="src\cpp\hpetrisim\res\ellipse.cur">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="src\cpp\hpetrisim\res\hpetrisim.rc2">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="src\cpp\hpetrisim\res\line.cur">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="src\cpp\hpetrisim\res\poly.cur">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="src\cpp\hpetrisim\res\position.cur">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="src\cpp\hpetrisim\res\RCa01176">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="src\cpp\hpetrisim\res\RCb01176">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="src\cpp\hpetrisim\res\rectangle.cur">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="src\cpp\hpetrisim\res\round.cur">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="src\cpp\hpetrisim\res\text.cur">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="src\cpp\hpetrisim\res\transition.cur">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="src\cpp\hpetrisim\res\zoomincursor.cur">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="src\cpp\hpetrisim\res\zoomoutcursor.cur">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\cpp\hpetrisim\ChildFrm.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\DrawHandle.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\HArrangeTool.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\HClipboardTool.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\HConnector.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\HConst.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\HDrawInfo.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\HDrawObject.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\HEditorEvent.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\HErrorFile.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\HGroup.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\HLabel.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\HLine.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\HMultiDocTemplate.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\HNetMember.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\HPoly.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\HPosition.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\HPropertyValue.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\HRandom.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\HRect.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\HRibbonColorButton.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\HSimToolbar.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\HSimulation.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\HText.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\HTransition.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\HUpdateObject.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\IniSection.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\InplaceEdit.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\MainFrm.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\NetObjectTool.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\OutputWnd.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\PetriSim.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\PetriSimDoc.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\PetriSimView.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\PreviewTool.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\PreviewWnd.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\resource.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\RibbonEdit.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\SelectTool.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\ShapeTool.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\Splash.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\stdafx.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\StoreFillStyleGallery.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\targetver.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\Tracker.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\ZoomView.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\ArchiveHelper.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\GDI+Helper.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\hpetrisim\Helper.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\3rd-party\QTransformTracker\QBufferDC.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\3rd-party\QTransformTracker\QGdiPlus.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\3rd-party\QTransformTracker\QTracker.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\3rd-party\QTransformTracker\QTransformTracker.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\3rd-party\OXZoomView\OXZOOMVW.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpp\3rd-party\DrawClient\RibbonListButton.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\cpp\hpetrisim\ChildFrm.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\DrawHandle.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\HArrangeTool.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\HClipboardTool.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\HConnector.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\HDrawInfo.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\HDrawObject.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\HErrorFile.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\HGroup.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\HLabel.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\HLine.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\HMultiDocTemplate.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\HNetMember.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\HPoly.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\HPosition.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\HRect.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\HRibbonColorButton.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\HSimToolbar.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\HSimulation.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\HText.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\HTransition.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\HUpdateObject.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\IniSection.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\InplaceEdit.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\MainFrm.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\NetObjectTool.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\NewBrush.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\OutputWnd.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\PetriSim.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\PetriSimDoc.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\PetriSimView.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\PreviewTool.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\PreviewWnd.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\RibbonEdit.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\SelectTool.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\ShapeTool.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\Splash.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\stdafx.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\Tracker.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\hpetrisim\ZoomView.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\3rd-party\DrawClient\RibbonListButton.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\3rd-party\OXZoomView\Oxzoomvw.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\3rd-party\QTransformTracker\QBufferDC.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\3rd-party\QTransformTracker\QTracker.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp\3rd-party\QTransformTracker\QTransformTracker.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\cpp\hpetrisim\HPetriSim.rc">
+      <Filter>Ressourcendateien</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="src\cpp\hpetrisim\res\buttons.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="src\cpp\hpetrisim\res\disconnected.ico">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="src\cpp\hpetrisim\res\filelarge.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="src\cpp\hpetrisim\res\filesmall.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="src\cpp\hpetrisim\res\fillstyles.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="src\cpp\hpetrisim\res\homesmall.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="src\cpp\hpetrisim\res\HPetriSim.ico">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="src\cpp\hpetrisim\res\hpsdoc.ico">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="src\cpp\hpetrisim\res\linestyle.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="src\cpp\hpetrisim\res\lineweight.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="src\cpp\hpetrisim\res\main.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="src\cpp\hpetrisim\res\objectformat.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="src\cpp\hpetrisim\res\propertieslarge.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="src\cpp\hpetrisim\res\propertiessmall.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="src\cpp\hpetrisim\res\shapeformatlarge.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="src\cpp\hpetrisim\res\shapeformatsmall.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="src\cpp\hpetrisim\res\simlarge.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="src\cpp\hpetrisim\res\simsmall.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="src\cpp\hpetrisim\res\timer.ico">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="src\cpp\hpetrisim\res\toolbar.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="src\cpp\hpetrisim\res\toolbar256.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="src\cpp\hpetrisim\res\viewlarge.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="src\cpp\hpetrisim\res\viewsmall.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="src\cpp\hpetrisim\res\writelarge.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="src\cpp\hpetrisim\res\writesmall.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

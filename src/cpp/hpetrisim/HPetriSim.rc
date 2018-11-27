@@ -1,0 +1,751 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Deutsch (Deutschland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_DISCONNECTED        ICON                    "res\\disconnected.ico"
+IDI_TIMER               ICON                    "res\\timer.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_OBJECT_FORMAT       BITMAP                  "res\\objectformat.bmp"
+IDB_LINESTYLE           BITMAP                  "res\\linestyle.bmp"
+IDB_SHAPEFORMAT_LARGE   BITMAP                  "res\\shapeformatlarge.bmp"
+IDB_PROPERTIESSMALL     BITMAP                  "res\\propertiessmall.bmp"
+IDB_PROPERTIESLARGE     BITMAP                  "res\\propertieslarge.bmp"
+#endif    // Deutsch (Deutschland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Englisch (USA) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\HPetriSim.ico"
+IDR_HPSTYPE             ICON                    "res\\hpsdoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_WRITESMALL          BITMAP                  "res\\writesmall.bmp"
+IDB_WRITELARGE          BITMAP                  "res\\writelarge.bmp"
+IDB_BUTTONS             BITMAP                  "res\\buttons.bmp"
+IDB_MAIN                BITMAP                  "res\\main.bmp"
+IDB_FILESMALL           BITMAP                  "res\\filesmall.bmp"
+IDB_FILELARGE           BITMAP                  "res\\filelarge.bmp"
+IDB_VIEWSMALL           BITMAP                  "res\\viewsmall.bmp"
+IDB_VIEWLARGE           BITMAP                  "res\\viewlarge.bmp"
+IDB_HOMESMALL           BITMAP                  "res\\homesmall.bmp"
+IDB_LINEWEIGHT          BITMAP                  "res\\lineweight.bmp"
+IDB_FILLSTYLES          BITMAP                  "res\\fillstyles.bmp"
+IDB_SHAPEFORMAT_SMALL   BITMAP                  "res\\shapeformatsmall.bmp"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#include ""res\\hpetrisim.rc2""  // non-App Studio edited resources\r\n"
+    "\r\n"
+    "#include ""afxres.rc""  // Standard components\r\n"
+    "#include ""afxprint.rc""  // printing/print preview resources\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""afxribbon.rc"" // ribbon and control bar resources\r\n"
+    "#endif\r\n"
+    "#include ""afxolecl.rc""  // OLE container re\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_HPSTYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New",                        ID_FILE_NEW
+        MENUITEM "&Open",                       ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "S&ave",                       ID_FILE_SAVE
+        MENUITEM "&Save as",                    ID_FILE_SAVE_AS
+        POPUP "&Export"
+        BEGIN
+            MENUITEM "&Document",                   ID_STORE_SCREEN
+            MENUITEM "&View",                       ID_STORE_CLIENT
+            MENUITEM "&Net",                        ID_FILE_EXPORT_NET
+            MENUITEM "&File",                       ID_FILE_EXPORT_INTERCHANGE
+        END
+        POPUP "Import"
+        BEGIN
+            MENUITEM "&File",                       ID_FILE_IMPORT_INTERCHANGE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Print",                      ID_FILE_PRINT
+        MENUITEM "Pane &View",                  ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rinter Setup",              ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Last File",                   ID_FILE_MRU_FILE1, GRAYED
+    END
+    POPUP "E&dit"
+    BEGIN
+        MENUITEM "&Delete\tDel",                ID_REMOVE_SELECTED
+        MENUITEM "&Cut\tStrg+X",                ID_EDIT_CUT
+        MENUITEM "C&opy\tStrg+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tStrg+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "&Group",                      ID_GROUP
+        MENUITEM "U&ngroup",                    ID_UNGROUP
+        MENUITEM SEPARATOR
+        MENUITEM "Pop&up",                      ID_CONTEXT_POPUP
+        MENUITEM "Pu&shback",                   ID_CONTEXT_PUSHBACK
+    END
+    POPUP "&View"
+    BEGIN
+        POPUP "&Toolbars and Docking Windows"
+        BEGIN
+            MENUITEM "<dummy>",                     ID_VIEW_TOOLBAR
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Show &Label",                 ID_EDITOR_SHOWLABEL
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Overlapped",                 ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Symbols",                    ID_WINDOW_ARRANGE
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Select",                     ID_SELECT_TOOL
+        MENUITEM "Pa&n",                        ID_PAN_MODE
+        MENUITEM "&Line",                       ID_LINE_MODE
+        MENUITEM "&Polygon",                    ID_MULTI_LINE_MODE
+        MENUITEM "&Rectangle",                  ID_RECT_MODE
+        MENUITEM "&Text",                       ID_TEXT_MODE
+        MENUITEM "Plac&e",                      ID_POSITION_MODE
+        MENUITEM "Tr&ansition",                 ID_TRANSITION_MODE
+        MENUITEM "Ar&c",                        ID_CONNECTOR_MODE
+    END
+    POPUP "&Zoom"
+    BEGIN
+        MENUITEM "Zoom &In",                    ID_ZOOM_IN
+        MENUITEM "Zoom &Out",                   ID_ZOOM_OUT
+        MENUITEM "&Zoom 1:1",                   ID_ZOOM_NORM
+        MENUITEM "Zoom &Port",                  ID_ZOOM_PORT
+    END
+    POPUP "&Simulation"
+    BEGIN
+        MENUITEM "&Sim Mode",                   ID_SYM_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "S&ingle Step",                ID_SYM_SINGLESTEP
+        MENUITEM "&Run Normal",                 ID_SYM_RUNNORMAL
+        MENUITEM "R&un Fast",                   ID_SYM_RUNFAST
+        MENUITEM "P&ause",                      ID_PAUSE_MODE
+        MENUITEM "I&ncrease Speed\tNUM+",       ID_SYM_INCREASESPEED
+        MENUITEM "&Decrease Speed\tNUM-",       ID_SYM_DECREASESPEED
+        MENUITEM "&Write Output File",          ID_ENABLE_WRITEOUTPUTFILE
+        MENUITEM SEPARATOR
+        MENUITEM "R&eset",                      ID_SYM_RESET
+    END
+    POPUP "&Extra"
+    BEGIN
+        MENUITEM "&Properties",                 ID_EDITOR_PROPERTIES
+    END
+    POPUP "&?"
+    BEGIN
+        MENUITEM "&Help",                       ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "About HPetriSym...",          ID_APP_ABOUT
+    END
+END
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\\tCtrl+N",               ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About",                      ID_APP_ABOUT
+    END
+END
+
+IDR_POPUP_MDITABS MENU 
+BEGIN
+    POPUP "DUMMY"
+    BEGIN
+        MENUITEM "&Save",                       ID_FILE_SAVE
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM SEPARATOR
+        MENUITEM "New &Horizontal Tab Group",   ID_MDI_NEW_HORZ_TAB_GROUP
+        MENUITEM "New &Vertical Tab Group",     ID_MDI_NEW_VERT_GROUP
+        MENUITEM "Move to Ne&xt Tab Group",     ID_MDI_MOVE_TO_NEXT_GROUP
+        MENUITEM "Move to P&revious Tab Group", ID_MDI_MOVE_TO_PREV_GROUP
+    END
+END
+
+IDR_POPUP_DROP_MDITABS MENU 
+BEGIN
+    POPUP "DUMMY"
+    BEGIN
+        MENUITEM "New &Horizontal Tab Group",   ID_MDI_NEW_HORZ_TAB_GROUP
+        MENUITEM "New &Vertical Tab Group",     ID_MDI_NEW_VERT_GROUP
+        MENUITEM "Move to Ne&xt Tab Group",     ID_MDI_MOVE_TO_NEXT_GROUP
+        MENUITEM "Move to P&revious Tab Group", ID_MDI_MOVE_TO_PREV_GROUP
+        MENUITEM SEPARATOR
+        MENUITEM "&Cancel",                     32828
+    END
+END
+
+IDR_WINDOWS_MENU MENU 
+BEGIN
+    MENUITEM "&New Window",                 ID_WINDOW_NEW
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    VK_ESCAPE,      ID_CANCEL_EDIT,         VIRTKEY, NOINVERT
+    VK_DELETE,      ID_EDIT_CLEAR,          VIRTKEY, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_SUBTRACT,    ID_OBJECT_MOVEBACK,     VIRTKEY, NOINVERT
+    VK_ADD,         ID_OBJECT_MOVEFORWARD,  VIRTKEY, NOINVERT
+    VK_SUBTRACT,    ID_OBJECT_MOVETOBACK,   VIRTKEY, CONTROL, NOINVERT
+    VK_ADD,         ID_OBJECT_MOVETOFRONT,  VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_F11,         ID_VIEW_FULLSCREEN,     VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 269, 121
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About HPetriSim"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "&OK",IDOK,225,100,37,14,WS_GROUP
+    CONTROL         214,IDC_STATIC,"Static",SS_BITMAP,17,14,17,16
+    LTEXT           "Author",IDC_STATIC_AUTHOR,47,11,201,10,NOT WS_GROUP
+    LTEXT           "Software",IDC_STATIC_SOFTWARE,47,25,201,10,NOT WS_GROUP
+    PUSHBUTTON      "MAILTO",IDC_BUTTON_MAILTO,47,38,127,13
+    PUSHBUTTON      "URL",IDC_BUTTON_URL,47,55,127,13
+    LTEXT           "License",IDC_STATIC_COPYRIGHT,47,77,201,20,NOT WS_GROUP
+    PUSHBUTTON      "LIC_URL",IDC_BUTTON_LIC_URL,47,101,127,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Henryk "
+            VALUE "FileDescription", "Tool for creation and simulation of Petri-Nets"
+            VALUE "FileVersion", "0, 0, 0, 1"
+            VALUE "InternalName", "HPetriSim"
+            VALUE "LegalCopyright", "© Henryk Anschuetz All rights reserved."
+            VALUE "OriginalFilename", "HPetriSim.exe"
+            VALUE "ProductName", "HPetriSim 0.9 BETA"
+            VALUE "ProductVersion", "0, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 262
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 114
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_ZOOM_IN_CURSOR      CURSOR                  "res\\zoomincursor.cur"
+IDC_ZOOM_OUT_CURSOR     CURSOR                  "res\\zoomoutcursor.cur"
+IDC_LINE                CURSOR                  "res\\line.cur"
+IDC_ELLIPSE             CURSOR                  "res\\ellipse.cur"
+IDC_ROUND               CURSOR                  "res\\round.cur"
+IDC_RECT                CURSOR                  "res\\rectangle.cur"
+IDC_POLY                CURSOR                  "res\\poly.cur"
+IDC_TEXT                CURSOR                  "res\\text.cur"
+IDC_POSITION            CURSOR                  "res\\position.cur"
+IDC_TRANSITION          CURSOR                  "res\\transition.cur"
+IDC_CONNECTOR           CURSOR                  "res\\connector.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "HPetriSim"
+    IDR_HPSTYPE             "Editor\nHPS\nHPS\nFileTyp HPetriSim   (*.hps)\n.hps\nHPetriSim.Document\nHpsDocument"
+    IDR_EDITBAR             "Toggle the Editbar on/off\nToggle Editbar"
+    ID_SLIDER_SIMSPEED      "Set the Simulation Speed in Run Mode\nSpeed"
+    IDR_SYMBAR              "Toggle the Simulation Bar on/off\nToggle Simulation Bar"
+    IDR_SYM_VIEW            "This is the first view.\n\n\n\n\n\n"
+    ID_PAUSE_MODE           "Stop running  in  Pause Mode\nPause"
+    ID_SPEED_MODE           "Allow the Simulator to run with fast speed\nFast"
+    IDS_CONVERT_OLDDOCVER   "Old ""HPSim1"" Document version will be converted by saving\r\n(no backward compatibility!)"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SIM_RESET            "Reset the Simulation\nReset"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "HPetriSim"
+    AFX_IDS_IDLEMESSAGE     "Press F1 for Help"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "ER"
+    ID_INDICATOR_CAPS       "UF"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "RF"
+    ID_INDICATOR_OVR        "ÜB"
+    ID_INDICATOR_REC        "MA"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "a new Document\nNew"
+    ID_FILE_OPEN            "Open a file\nOpen"
+    ID_FILE_CLOSE           "Close the aktive doc.\nClose"
+    ID_FILE_SAVE            "Save the aktive doc.\nSave"
+    ID_FILE_SAVE_AS         "Save the doc under a new name.\nSave under"
+    ID_FILE_PAGE_SETUP      "Change the page print properties.\nPage setup"
+    ID_FILE_PRINT_SETUP     "Printer Setup\nPrinter Setup"
+    ID_FILE_PRINT           "Print the aktive doc.\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Page view.\nPage view"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Show information, copyright and Version from HPetriSim \nAbout"
+    ID_APP_EXIT             "Close the Aplication\nClose"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this Document"
+    ID_FILE_MRU_FILE2       "Open this Document"
+    ID_FILE_MRU_FILE3       "Open this Document"
+    ID_FILE_MRU_FILE4       "Open this Document"
+    ID_FILE_MRU_FILE5       "Open this Document"
+    ID_FILE_MRU_FILE6       "Open this Document"
+    ID_FILE_MRU_FILE7       "Open this Document"
+    ID_FILE_MRU_FILE8       "Open this Document"
+    ID_FILE_MRU_FILE9       "Open this Document"
+    ID_FILE_MRU_FILE10      "Open this Document"
+    ID_FILE_MRU_FILE11      "Open this Document"
+    ID_FILE_MRU_FILE12      "Open this Document"
+    ID_FILE_MRU_FILE13      "Open this Document"
+    ID_FILE_MRU_FILE14      "Open this Document"
+    ID_FILE_MRU_FILE15      "Open this Document"
+    ID_FILE_MRU_FILE16      "Open this Document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Next pane"
+    ID_PREV_PANE            "Previus pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open a new window for the aktive doc\nNew window"
+    ID_WINDOW_ARRANGE       "Arrange all windows symbols\nArrange symbols "
+    ID_WINDOW_CASCADE       "Cascade all windows\nCascade"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase mark.\nerase"
+    ID_EDIT_CLEAR_ALL       "Erase all.\nErase all"
+    ID_EDIT_COPY            "Copy marking area to theclipbord\nCopy"
+    ID_EDIT_CUT             "Cut marking area and copy this to clipbord"
+    ID_EDIT_PASTE           "Insert the clipbord in this doc\nInsert"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change window size"
+    AFX_IDS_SCMOVE          "Change window position"
+    AFX_IDS_SCMINIMIZE      "Minimize the window to a symbol"
+    AFX_IDS_SCMAXIMIZE      "Maximize the window "
+    AFX_IDS_SCNEXTWINDOW    "Next window"
+    AFX_IDS_SCPREVWINDOW    "Previus window"
+    AFX_IDS_SCCLOSE         "Close aktiv doc"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Normalize window size"
+    AFX_IDS_SCTASKLIST      "Task list"
+    AFX_IDS_MDICHILD        "Window"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Round Rectangle"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SELECT_TOOL          "Set to select mode\nSelect"
+    ID_RECT_MODE            "Set the rectangle drawing mode\nRectangle"
+    ID_LINE_MODE            "Set the line drawing mode\nLine"
+    ID_POSITION_MODE        "Set the place drawing mode\nPlace"
+    ID_TRANSITION_MODE      "Set the Transition drawing mode\nTransition"
+    ID_MULTI_LINE_MODE      "Set the Polygon drawing mode\nPolygon"
+    ID_CONNECTOR_MODE       "Set the Arc drawing mode\nArc"
+    ID_TEXT_MODE            "Set the text drawing mode\nText"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ZOOM_IN              "Set zoom in mode\nZoom In"
+    ID_VIEW_SYM_OUTPUT      "View 2\nView 2."
+    ID_ZOOM_NORM            "Set zoom ratio to 1.0\nZoom 1.0"
+    ID_ZOOM_OUT             "Set zoom out mode\nZoom Out"
+    ID_ZOOM_PORT            "Set the zoom ratio to the viewport extend\nZoom to view"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RIBBON_STYLE_DESC   "Choose one of the Office 2007 themes"
+    IDS_RIBBON_STATUSBAR    "Status Bar"
+    IDS_RIBBON_VIEW         "View"
+    IDS_RIBBON_ZOOM         "Zoom"
+    IDS_RIBBON_OUTPUTWND    "Output Window"
+    IDS_RIBBON_PROPERTIESWND "Properties"
+    IDS_RIBBON_ZOOM_NORM    "Zoom off"
+    IDS_RIBBON_ZOOM_IN      "Zoom in"
+    IDS_RIBBON_ZOOM_OUT     "Zoom out"
+    IDS_RIBBON_ZOOM_FULL    "Fit to window"
+    IDS_RIBBON_SHOWORHIDE   "Show or hide"
+    IDS_RIBBON_SHOWLABEL    "Show Label"
+    IDS_RIBBON_SHAPES       "Shapes"
+    IDS_RIBBON_LINE         "Line"
+    IDS_RIBBON_RECT         "Rectangle"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RIBBON_FILE         "File"
+    IDS_RIBBON_NEW          "&New"
+    IDS_RIBBON_OPEN         "&Open..."
+    IDS_RIBBON_SAVE         "&Save"
+    IDS_RIBBON_SAVEAS       "Save &As..."
+    IDS_RIBBON_PRINT        "Print"
+    IDS_RIBBON_PRINT_LABEL  "Preview and print the document"
+    IDS_RIBBON_PRINT_QUICK  "&Quick Print"
+    IDS_RIBBON_PRINT_PREVIEW "Print Pre&view"
+    IDS_RIBBON_PRINT_SETUP  "Print Set&up"
+    IDS_RIBBON_CLOSE        "&Close"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RIBBON_RECENT_DOCS  "Recent Documents"
+    IDS_RIBBON_EXIT         "E&xit"
+    IDS_RIBBON_HOME         "&Home"
+    IDS_RIBBON_CLIPBOARD    "Clipboard\nd"
+    IDS_RIBBON_PASTE        "Paste\nv"
+    IDS_RIBBON_CUT          "Cut\nx"
+    IDS_RIBBON_COPY         "Copy\nc"
+    IDS_RIBBON_SELECTALL    "Select All\na"
+    IDS_RIBBON_WINDOW       "Window\nw"
+    IDS_RIBBON_WINDOWS      "Windows\ni"
+    IDS_RIBBON_STYLE        "Style"
+    IDS_RIBBON_STYLE_TIP    "Modify Visual Style"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_AUTHOR              "Henryk Anschuetz"
+    IDS_URL                 "www.winpesim.de"
+    IDS_MAILTO              "admin@winpesim.de"
+    IDS_REGISTRY            "www.winpesim.de"
+    IDS_COPYRIGHT           "This work is licensed under the Creative Commons Attribution-NoDerivs 3.0 Unported License."
+    IDS_SOFTWARE            "HPetriSim 0.9 BETA"
+    IDS_LIC_URL             "creativecommons.org/licenses/by-nd/3.0/"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_RECT_FILLCOLOR       "Change the fillcolor\nFillcolor"
+    ID_CONTEXT_BORDERCOLOR  "Change the bordercolor\nBordercolor"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CONTEXT_POPUP        "Popup a selected Item\nPopup"
+    ID_CONTEXT_PUSHBACK     "Pushback a selected Item\nPushback"
+    ID_GROUP                "Group all selected items\nGroup"
+    ID_UNGROUP              "Ungroup a selected group item\nUngroup"
+    ID_EDITOR_EIGENSCHAFTEN "Call the editors properties\nProperties"
+    ID_EDITOR_PROPERTIES    "Call the properties dialog\nProperties"
+    ID_EDITOR_SHOWLABEL     "Toggle labels visibility on/off \n Labels"
+    ID_SYM_SINGLESTEP       "Allow the Simulator to make a Step\nStep"
+    ID_SYM_RUNNORMAL        "Set the Simulator Normal Speed with Tokengame Animation\nRun"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_HPS_OUTPUT          "Output\n\n\n\n\n\n"
+    IDR_MAINBAR             "Toggle the Mainbar on/off\nToggle Mainbar"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SYM_RUNFAST          "Set the Simulator max. Speed\nRun Fast"
+    ID_SYM_STOP             "Toggle the Simulator on/off\nON\\OFF"
+    ID_SYM_RESET            "Reset the Simulator to Start Value\nReset"
+    ID_SYM_INCREASESPEED    "Increase the Speed in Normal Run\nIncrease"
+    ID_SYM_DECREASESPEED    "Decrease the Speed in Normal Run\nDecrease"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_STEPCOUNT  "SC. 16000000"
+    IDS_TOOLBAR_STANDARD    "Main Toolbar"
+    IDS_TOOLBAR_CUSTOMIZE   "Customize"
+    IDS_TOOLBAR_EDIT        "Tools Toolbar"
+    IDS_TOOLBAR_SIM         "Simulation Toolbar"
+    IDS_OUTPUT_WND          "Output Window"
+    IDS_PROPERTIES_WND      "Properties Window"
+    IDS_WINDOWS_MANAGER     "&Windows..."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_STORE_SCREEN         "Save the actual Document as Bitmap File\nSave Bitmap"
+    ID_STORE_CLIENT         "Save the actual View as Bitmap File\nSave Bitmap"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ENABLE_WRITEOUTPUTFILE 
+                            "Toggle Write to Output File on/off\nOutput File"
+    ID_FILE_EXPORT_NET      "Save the actual Petri Net as Text\nSave Net Text"
+    ID_FILE_EXPORT_INTERCHANGE 
+                            "Save the actual Document as interchange File\nSave interchange File"
+    ID_FILE_IMPORT_INTERCHANGE 
+                            "Load a Document as interchange File\nLoad interchange File"
+    ID_REMOVE_SELECTED      "Delete all selected Items\nDelete"
+    ID_PAN_MODE             "Set the Pan Mode\nPan"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RIBBON_POLYGON      "Polygon"
+    IDS_RIBBON_TEXT         "Text"
+    IDS_RIBBON_POSITION     "Position"
+    IDS_RIBBON_TRANSITION   "Transition"
+    IDS_RIBBON_CONNECTOR    "Arc"
+    IDS_RIBBON_SELECT       "Select"
+    IDS_RIBBON_EDIT         "Edit"
+    IDS_RIBBON_DRAW         "Draw"
+    IDS_RIBBON_DELETE       "Delete"
+    IDS_RIBBON_ELLIPSE      "Ellipse"
+    IDS_RIBBON_ROUNDRECT    "Rounded"
+    IDS_RIBBON_OBJECTS      "Objects"
+    IDS_RIBBON_LINECOLOR    "Color\nso"
+    IDS_RIBBON_GRID         "Grid"
+    IDS_RIBBON_SHOW_GRID    "Show"
+    IDS_RIBBON_ALIGN_GRID   "Align"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SHOW_GRID            "Show or Hide the Grid Lines\nGrid"
+    ID_ALING_GRID           "Align Draw Objects to Grid\nAlign Grid"
+    ID_GRID_SIZE            "Pixel between Grid Lines\nGrid Lines"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_POSITION_TOKEN_NOW   "Position Tokens now\nTokens"
+    ID_POSITION_TOKEN_INITIAL 
+                            "Position Initial Token count (after reset)\nInitial"
+    ID_POSITION_TOKEN_CAPACITY "Position Token Capacity\nCapacity"
+    ID_POSITION_TOKEN_COUNTER 
+                            "Token tha leave the Position (Simulation)\nCounter"
+    ID_OBJECT_LINEWEIGHT    """Change the line weight\nLine Weight"""
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RIBBON_CAT_SIM      "Simulation"
+    IDS_RIBBON_POSITION_TOKEN_NOW "Now      "
+    IDS_RIBBON_POSITION_TOKEN_INITIAL "Initial      "
+    IDS_RIBBON_POSITION_TOKEN_CAPACITY "Capacity"
+    IDS_RIBBON_POSITION_TOKEN_COUNTER "Counter"
+    IDS_RIBBON_FILLCOLOR    "Fore"
+    IDS_RIBBON_LINEWEIGHT   "Weight\nsw"
+    IDS_RIBBON_OBJECTSIZE   "Size\ns"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_OBJECT_TEXT_AUTOSIZE "Dynamically Resize Text to Fit a Text Field\nauto-size"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_OBJECT_CLOSEFIGURE   "\nClose Figure"
+END
+
+#endif    // Englisch (USA) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "res\hpetrisim.rc2"  // non-App Studio edited resources
+
+#include "afxres.rc"  // Standard components
+#include "afxprint.rc"  // printing/print preview resources
+#if !defined(_AFXDLL)
+#include "afxribbon.rc" // ribbon and control bar resources
+#endif
+#include "afxolecl.rc"  // OLE container res
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
