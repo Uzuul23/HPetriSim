@@ -7,7 +7,11 @@
 //
 // Generated from the TEXTINCLUDE 2 resource.
 //
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
 #include "afxres.h"
+#include "verrsrc.h"
 /////////////////////////////////////////////////////////////////////////////
 #undef APSTUDIO_READONLY_SYMBOLS
 
@@ -15,10 +19,8 @@
 // Deutsch (Deutschland) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
-#ifdef _WIN32
 LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
 #pragma code_page(1252)
-#endif //_WIN32
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -28,7 +30,9 @@ LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
 IDI_DISCONNECTED        ICON                    "res\\disconnected.ico"
+
 IDI_TIMER               ICON                    "res\\timer.ico"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -36,10 +40,15 @@ IDI_TIMER               ICON                    "res\\timer.ico"
 //
 
 IDB_OBJECT_FORMAT       BITMAP                  "res\\objectformat.bmp"
+
 IDB_LINESTYLE           BITMAP                  "res\\linestyle.bmp"
+
 IDB_SHAPEFORMAT_LARGE   BITMAP                  "res\\shapeformatlarge.bmp"
+
 IDB_PROPERTIESSMALL     BITMAP                  "res\\propertiessmall.bmp"
+
 IDB_PROPERTIESLARGE     BITMAP                  "res\\propertieslarge.bmp"
+
 #endif    // Deutsch (Deutschland) resources
 /////////////////////////////////////////////////////////////////////////////
 
@@ -48,10 +57,8 @@ IDB_PROPERTIESLARGE     BITMAP                  "res\\propertieslarge.bmp"
 // Englisch (USA) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
-#ifdef _WIN32
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 #pragma code_page(1252)
-#endif //_WIN32
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -61,7 +68,9 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
 IDR_MAINFRAME           ICON                    "res\\HPetriSim.ico"
+
 IDR_HPSTYPE             ICON                    "res\\hpsdoc.ico"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -69,17 +78,29 @@ IDR_HPSTYPE             ICON                    "res\\hpsdoc.ico"
 //
 
 IDB_WRITESMALL          BITMAP                  "res\\writesmall.bmp"
+
 IDB_WRITELARGE          BITMAP                  "res\\writelarge.bmp"
+
 IDB_BUTTONS             BITMAP                  "res\\buttons.bmp"
+
 IDB_MAIN                BITMAP                  "res\\main.bmp"
+
 IDB_FILESMALL           BITMAP                  "res\\filesmall.bmp"
+
 IDB_FILELARGE           BITMAP                  "res\\filelarge.bmp"
+
 IDB_VIEWSMALL           BITMAP                  "res\\viewsmall.bmp"
+
 IDB_VIEWLARGE           BITMAP                  "res\\viewlarge.bmp"
+
 IDB_HOMESMALL           BITMAP                  "res\\homesmall.bmp"
+
 IDB_LINEWEIGHT          BITMAP                  "res\\lineweight.bmp"
+
 IDB_FILLSTYLES          BITMAP                  "res\\fillstyles.bmp"
+
 IDB_SHAPEFORMAT_SMALL   BITMAP                  "res\\shapeformatsmall.bmp"
+
 
 #ifdef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
@@ -94,7 +115,11 @@ END
 
 2 TEXTINCLUDE 
 BEGIN
-    "#include ""afxres.h\0"
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\0"
 END
 
 3 TEXTINCLUDE 
@@ -117,7 +142,7 @@ END
 // Menu
 //
 
-IDR_HPSTYPE MENU 
+IDR_HPSTYPE MENU
 BEGIN
     POPUP "&File"
     BEGIN
@@ -218,7 +243,7 @@ BEGIN
     END
 END
 
-IDR_MAINFRAME MENU 
+IDR_MAINFRAME MENU
 BEGIN
     POPUP "&File"
     BEGIN
@@ -241,7 +266,7 @@ BEGIN
     END
 END
 
-IDR_POPUP_MDITABS MENU 
+IDR_POPUP_MDITABS MENU
 BEGIN
     POPUP "DUMMY"
     BEGIN
@@ -257,7 +282,7 @@ BEGIN
     END
 END
 
-IDR_POPUP_DROP_MDITABS MENU 
+IDR_POPUP_DROP_MDITABS MENU
 BEGIN
     POPUP "DUMMY"
     BEGIN
@@ -270,7 +295,7 @@ BEGIN
     END
 END
 
-IDR_WINDOWS_MENU MENU 
+IDR_WINDOWS_MENU MENU
 BEGIN
     MENUITEM "&New Window",                 ID_WINDOW_NEW
 END
@@ -281,7 +306,7 @@ END
 // Accelerator
 //
 
-IDR_MAINFRAME ACCELERATORS 
+IDR_MAINFRAME ACCELERATORS
 BEGIN
     VK_ESCAPE,      ID_CANCEL_EDIT,         VIRTKEY, NOINVERT
     VK_DELETE,      ID_EDIT_CLEAR,          VIRTKEY, NOINVERT
@@ -313,7 +338,7 @@ CAPTION "About HPetriSim"
 FONT 8, "MS Sans Serif", 0, 0, 0x0
 BEGIN
     DEFPUSHBUTTON   "&OK",IDOK,225,100,37,14,WS_GROUP
-    CONTROL         214,IDC_STATIC,"Static",SS_BITMAP,17,14,17,16
+    CONTROL         IDB_MAIN,IDC_STATIC,"Static",SS_BITMAP,17,14,17,16
     LTEXT           "Author",IDC_STATIC_AUTHOR,47,11,201,10,NOT WS_GROUP
     LTEXT           "Software",IDC_STATIC_SOFTWARE,47,25,201,10,NOT WS_GROUP
     PUSHBUTTON      "MAILTO",IDC_BUTTON_MAILTO,47,38,127,13
@@ -368,7 +393,7 @@ END
 //
 
 #ifdef APSTUDIO_INVOKED
-GUIDELINES DESIGNINFO 
+GUIDELINES DESIGNINFO
 BEGIN
     IDD_ABOUTBOX, DIALOG
     BEGIN
@@ -387,23 +412,34 @@ END
 //
 
 IDC_ZOOM_IN_CURSOR      CURSOR                  "res\\zoomincursor.cur"
+
 IDC_ZOOM_OUT_CURSOR     CURSOR                  "res\\zoomoutcursor.cur"
+
 IDC_LINE                CURSOR                  "res\\line.cur"
+
 IDC_ELLIPSE             CURSOR                  "res\\ellipse.cur"
+
 IDC_ROUND               CURSOR                  "res\\round.cur"
+
 IDC_RECT                CURSOR                  "res\\rectangle.cur"
+
 IDC_POLY                CURSOR                  "res\\poly.cur"
+
 IDC_TEXT                CURSOR                  "res\\text.cur"
+
 IDC_POSITION            CURSOR                  "res\\position.cur"
+
 IDC_TRANSITION          CURSOR                  "res\\transition.cur"
+
 IDC_CONNECTOR           CURSOR                  "res\\connector.cur"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
 // String Table
 //
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDR_MAINFRAME           "HPetriSim"
     IDR_HPSTYPE             "Editor\nHPS\nHPS\nFileTyp HPetriSim   (*.hps)\n.hps\nHPetriSim.Document\nHpsDocument"
@@ -416,18 +452,18 @@ BEGIN
     IDS_CONVERT_OLDDOCVER   "Old ""HPSim1"" Document version will be converted by saving\r\n(no backward compatibility!)"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_SIM_RESET            "Reset the Simulation\nReset"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     AFX_IDS_APP_TITLE       "HPetriSim"
     AFX_IDS_IDLEMESSAGE     "Press F1 for Help"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_INDICATOR_EXT        "ER"
     ID_INDICATOR_CAPS       "UF"
@@ -437,7 +473,7 @@ BEGIN
     ID_INDICATOR_REC        "MA"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_FILE_NEW             "a new Document\nNew"
     ID_FILE_OPEN            "Open a file\nOpen"
@@ -450,13 +486,13 @@ BEGIN
     ID_FILE_PRINT_PREVIEW   "Page view.\nPage view"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_APP_ABOUT            "Show information, copyright and Version from HPetriSim \nAbout"
     ID_APP_EXIT             "Close the Aplication\nClose"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_FILE_MRU_FILE1       "Open this Document"
     ID_FILE_MRU_FILE2       "Open this Document"
@@ -476,20 +512,20 @@ BEGIN
     ID_FILE_MRU_FILE16      "Open this Document"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_NEXT_PANE            "Next pane"
     ID_PREV_PANE            "Previus pane"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_WINDOW_NEW           "Open a new window for the aktive doc\nNew window"
     ID_WINDOW_ARRANGE       "Arrange all windows symbols\nArrange symbols "
     ID_WINDOW_CASCADE       "Cascade all windows\nCascade"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_EDIT_CLEAR           "Erase mark.\nerase"
     ID_EDIT_CLEAR_ALL       "Erase all.\nErase all"
@@ -498,7 +534,7 @@ BEGIN
     ID_EDIT_PASTE           "Insert the clipbord in this doc\nInsert"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     AFX_IDS_SCSIZE          "Change window size"
     AFX_IDS_SCMOVE          "Change window position"
@@ -509,19 +545,19 @@ BEGIN
     AFX_IDS_SCCLOSE         "Close aktiv doc"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     AFX_IDS_SCRESTORE       "Normalize window size"
     AFX_IDS_SCTASKLIST      "Task list"
     AFX_IDS_MDICHILD        "Window"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     AFX_IDS_PREVIEW_CLOSE   "Round Rectangle"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_SELECT_TOOL          "Set to select mode\nSelect"
     ID_RECT_MODE            "Set the rectangle drawing mode\nRectangle"
@@ -533,7 +569,7 @@ BEGIN
     ID_TEXT_MODE            "Set the text drawing mode\nText"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_ZOOM_IN              "Set zoom in mode\nZoom In"
     ID_VIEW_SYM_OUTPUT      "View 2\nView 2."
@@ -542,7 +578,7 @@ BEGIN
     ID_ZOOM_PORT            "Set the zoom ratio to the viewport extend\nZoom to view"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDS_RIBBON_STYLE_DESC   "Choose one of the Office 2007 themes"
     IDS_RIBBON_STATUSBAR    "Status Bar"
@@ -561,7 +597,7 @@ BEGIN
     IDS_RIBBON_RECT         "Rectangle"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDS_RIBBON_FILE         "File"
     IDS_RIBBON_NEW          "&New"
@@ -576,7 +612,7 @@ BEGIN
     IDS_RIBBON_CLOSE        "&Close"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDS_RIBBON_RECENT_DOCS  "Recent Documents"
     IDS_RIBBON_EXIT         "E&xit"
@@ -592,24 +628,24 @@ BEGIN
     IDS_RIBBON_STYLE_TIP    "Modify Visual Style"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDS_AUTHOR              "Henryk Anschuetz"
-    IDS_URL                 "www.winpesim.de"
+    IDS_URL                 "github.com/Uzuul23/HPetriSim"
     IDS_MAILTO              "admin@winpesim.de"
     IDS_REGISTRY            "www.winpesim.de"
-    IDS_COPYRIGHT           "This work is licensed under the Creative Commons Attribution-NoDerivs 3.0 Unported License."
+    IDS_COPYRIGHT           "GNU General Public License v3.0"
     IDS_SOFTWARE            "HPetriSim 0.9 BETA"
-    IDS_LIC_URL             "creativecommons.org/licenses/by-nd/3.0/"
+    IDS_LIC_URL             "gnu.org/licenses/gpl-3.0.html"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_RECT_FILLCOLOR       "Change the fillcolor\nFillcolor"
     ID_CONTEXT_BORDERCOLOR  "Change the bordercolor\nBordercolor"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_CONTEXT_POPUP        "Popup a selected Item\nPopup"
     ID_CONTEXT_PUSHBACK     "Pushback a selected Item\nPushback"
@@ -622,13 +658,13 @@ BEGIN
     ID_SYM_RUNNORMAL        "Set the Simulator Normal Speed with Tokengame Animation\nRun"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDR_HPS_OUTPUT          "Output\n\n\n\n\n\n"
     IDR_MAINBAR             "Toggle the Mainbar on/off\nToggle Mainbar"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_SYM_RUNFAST          "Set the Simulator max. Speed\nRun Fast"
     ID_SYM_STOP             "Toggle the Simulator on/off\nON\\OFF"
@@ -637,7 +673,7 @@ BEGIN
     ID_SYM_DECREASESPEED    "Decrease the Speed in Normal Run\nDecrease"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_INDICATOR_STEPCOUNT  "SC. 16000000"
     IDS_TOOLBAR_STANDARD    "Main Toolbar"
@@ -649,13 +685,13 @@ BEGIN
     IDS_WINDOWS_MANAGER     "&Windows..."
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_STORE_SCREEN         "Save the actual Document as Bitmap File\nSave Bitmap"
     ID_STORE_CLIENT         "Save the actual View as Bitmap File\nSave Bitmap"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_ENABLE_WRITEOUTPUTFILE 
                             "Toggle Write to Output File on/off\nOutput File"
@@ -668,7 +704,7 @@ BEGIN
     ID_PAN_MODE             "Set the Pan Mode\nPan"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDS_RIBBON_POLYGON      "Polygon"
     IDS_RIBBON_TEXT         "Text"
@@ -688,14 +724,14 @@ BEGIN
     IDS_RIBBON_ALIGN_GRID   "Align"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_SHOW_GRID            "Show or Hide the Grid Lines\nGrid"
     ID_ALING_GRID           "Align Draw Objects to Grid\nAlign Grid"
     ID_GRID_SIZE            "Pixel between Grid Lines\nGrid Lines"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_POSITION_TOKEN_NOW   "Position Tokens now\nTokens"
     ID_POSITION_TOKEN_INITIAL 
@@ -706,7 +742,7 @@ BEGIN
     ID_OBJECT_LINEWEIGHT    """Change the line weight\nLine Weight"""
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDS_RIBBON_CAT_SIM      "Simulation"
     IDS_RIBBON_POSITION_TOKEN_NOW "Now      "
@@ -718,12 +754,12 @@ BEGIN
     IDS_RIBBON_OBJECTSIZE   "Size\ns"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_OBJECT_TEXT_AUTOSIZE "Dynamically Resize Text to Fit a Text Field\nauto-size"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_OBJECT_CLOSEFIGURE   "\nClose Figure"
 END
@@ -745,7 +781,7 @@ END
 #if !defined(_AFXDLL)
 #include "afxribbon.rc" // ribbon and control bar resources
 #endif
-#include "afxolecl.rc"  // OLE container res
+#include "afxolecl.rc"  // OLE container re
 /////////////////////////////////////////////////////////////////////////////
 #endif    // not APSTUDIO_INVOKED
 
