@@ -7,20 +7,20 @@ The program supports Place/Transition Nets:
 
 Places with limited capacity
 
-    different edge types with weights
-    timed transitions 
+- different edge types with weights
+- timed transitions 
 
 The editor supports:
 
-    graphic objects can be positioned, moved, and deleted
-    text and geometrical objects available for annotations
-    zoom function
-    print function
+- graphic objects can be positioned, moved, and deleted
+- text and geometrical objects available for annotations
+- zoom function
+- print function
     
    
- Components:
+Components:
 
-    Graphical Editor
-    Token Game Animation
-    Fast Simulation
-    Simple Performance Analysis
+- Graphical Editor
+- Token Game Animation
+- Fast Simulation
+- Simple Performance Analysis
