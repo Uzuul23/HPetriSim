@@ -338,13 +338,13 @@ CAPTION "About HPetriSim"
 FONT 8, "MS Sans Serif", 0, 0, 0x0
 BEGIN
     DEFPUSHBUTTON   "&OK",IDOK,225,100,37,14,WS_GROUP
-    CONTROL         IDB_MAIN,IDC_STATIC,"Static",SS_BITMAP,17,14,17,16
+    CONTROL         IDB_MAIN,IDC_STATIC,"Static",SS_BITMAP,17,14,16,15
     LTEXT           "Author",IDC_STATIC_AUTHOR,47,11,201,10,NOT WS_GROUP
     LTEXT           "Software",IDC_STATIC_SOFTWARE,47,25,201,10,NOT WS_GROUP
     PUSHBUTTON      "MAILTO",IDC_BUTTON_MAILTO,47,38,127,13
     PUSHBUTTON      "URL",IDC_BUTTON_URL,47,55,127,13
     LTEXT           "License",IDC_STATIC_COPYRIGHT,47,77,201,20,NOT WS_GROUP
-    PUSHBUTTON      "LIC_URL",IDC_BUTTON_LIC_URL,47,101,127,13
+    PUSHBUTTON      "LIC_URL",IDC_BUTTON_LIC_URL,50,101,127,13
 END
 
 
@@ -432,6 +432,17 @@ IDC_POSITION            CURSOR                  "res\\position.cur"
 IDC_TRANSITION          CURSOR                  "res\\transition.cur"
 
 IDC_CONNECTOR           CURSOR                  "res\\connector.cur"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
 
 
 /////////////////////////////////////////////////////////////////////////////
