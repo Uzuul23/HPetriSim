@@ -24,3 +24,6 @@ Components:
 - Token Game Animation
 - Fast Simulation
 - Simple Performance Analysis
+
+# Operating system Microsoft Windows7 or greater 
+# Build environment: Microsoft Visual Studio 2017
