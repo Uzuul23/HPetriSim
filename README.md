@@ -23,8 +23,5 @@ The tool is useful for beginners such as students in order to get familiar with 
 ### Operating system
 - Microsoft Windows7 or (maybe) greater 
 
-### Dependencies
-- [Microsoft Visual C++ Redistributable 2017 (x86)](https://support.microsoft.com/de-de/help/2977003/the-latest-supported-visual-c-downloads)
-
 ### Build environment
 - Microsoft Visual Studio 2017
