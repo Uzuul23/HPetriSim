@@ -425,7 +425,7 @@ void CHSimulation::Online()
 					continue;
 				}
 
-				if (pCon->From()->ConnectorsIn().GetCount() > 1)
+				if (pCon->To()->ConnectorsIn().GetCount() > 1)
 				{
 					pTran->Enabled(true);
 					pTran->Invalid(true);
